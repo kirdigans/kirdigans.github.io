@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Sportify</title>
+        <link href="css/accueil.css" rel="stylesheet"/>
+    </head>
+    <body><div id="main">
+        
+        <div class="header">
+        <center> <h1 style="font-family: 'Luckiest Guy', cursive;">Sportify</h1> </center>
+        <center> <h3 style="font-family: 'Luckiest Guy', cursive;">Bienvenue sur notre Site</center>
+        </div>
+    <div class="topnav">
+        <a class="active" href="accueil.html">Accueil</a>
+        <a href="sports.html">Sports</a>
+        <a href="Contact.html">Contact</a>
+        <button class="openbtn"  class="split" onclick="openNav()">☰</button>
+    </div>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="a_propos.html">A-propos</a>
+        <a href="#">Services</a>
+        <a href="Contact.html">Contact</a>
+    </div>
+    <h1>A-Propos 🗨️</h1>
+    <hr align=left width="20%" padding="40px">
+    <h2>Presentation</h2>
+    <p>Bonjours,c'est l'équipe K.T.F, créer par Kirdigan,Terry et Florian.</p>
+    <p>Actuellement étudiants au lycée Le Rebours 🗺️ en première année de
+        BTS SIO (Services Informatiques aux Organisations).<br>Ceci est un site vitrine sur le sport, pour donner l'envie aux gens de faire du sport. </p>
+
+
+
+      </div>
+      <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      </script> 
+    </body>
+</html>

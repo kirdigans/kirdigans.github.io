@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Sports proposés de Sportify</title>
+        <link href="css/accueil.css" rel="stylesheet"/>
+    </head>
+    <body><div id="main">
+        
+        <div class="header">
+        <center> <h1 style="font-family: 'Luckiest Guy', cursive;">Sportify</h1> </center>
+        <center> <h3 style="font-family: 'Luckiest Guy', cursive;">Voici les Sports qu'on propose</center>
+        </div>
+    <div class="topnav">
+        <a class="active" href="accueil.html">Accueil</a>
+        <a href="sports.html">Sports</a>
+        <a href="Contact.html">Contact</a>
+        <button class="openbtn"  class="split" onclick="openNav()">☰</button>
+    </div>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="a_propos.html">A-propos</a>
+        <a href="#">Services</a>
+        <a href="Contact.html">Contact</a>
+    </div>
+    <br>
+     <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <h2 class="card-title">Football</h2>
+          <img src="images/football.gif" width="25%" height="25%">
+          <div class="card-body">
+          </div> 
+        </div>
+      </div>
+      <br>
+      <div class="col">
+        <div class="card">
+          <h2 class="card-title">Basketball</h2>
+          <img src="https://i.gifer.com/AYCA.gif" width="25%" height="25%">
+          <div class="card-body">
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="col">
+        <div class="card">
+          <h2 class="card-title">Tennis</h2>
+          <img src="images/tenis.gif"  width="25%" height="25%">
+          <div class="card-body">
+        </div>
+      </div>
+      <br>
+      <div class="col">
+        <div class="card">
+            <h2 class="card-title">Boxe</h2>
+          <img src="images/boxe.gif" width="25%" height="25%">
+          <div class="card-body">
+            <h2 class="card-title"></h2>
+          </div>
+        </div>
+      </div>
+      </div>  
+      </div>
+      <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      </script> 
+    </body>
+</html>

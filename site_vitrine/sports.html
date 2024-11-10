@@ -4,74 +4,95 @@
         <meta charset="UTF-8"/>
         <title>Sports proposés de Sportify</title>
         <link href="css/accueil.css" rel="stylesheet"/>
+        <style>
+            .card {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px; /* Espace entre les cartes */
+            }
+            .card img {
+                margin-right: 20px; /* Espace entre l'image et le texte */
+                width: 25%; 
+                height: 25%;
+            }
+            .card-description {
+                flex: 1;
+            }
+        </style>
     </head>
-    <body><div id="main">
-        
-        <div class="header">
-        <center> <h1 style="font-family: 'Luckiest Guy', cursive;">Sportify</h1> </center>
-        <center> <h3 style="font-family: 'Luckiest Guy', cursive;">Voici les Sports qu'on propose</center>
+    <body>
+        <div id="main">
+            <div class="header">
+                <center> 
+                    <h1 style="font-family: 'Luckiest Guy', cursive;">Sportify</h1> 
+                </center>
+                <center> 
+                    <h3 style="font-family: 'Luckiest Guy', cursive;">Voici les Sports qu'on propose</h3>
+                </center>
+            </div>
+            <div class="topnav">
+                <a class="active" href="accueil.html">Accueil</a>
+                <a href="sports.html">Sports</a>
+                <a href="Contact.html">Contact</a>
+                <button class="openbtn" class="split" onclick="openNav()">☰</button>
+            </div>
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="a_propos.html">A-propos</a>
+                <a href="#">Services</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+            <br>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="images/football.gif" alt="Football">
+                        <div class="card-description">
+                            <h2 class="card-title">Football</h2>
+                            <p>Le football est un sport d'équipe joué entre deux équipes de onze joueurs sans compter les remplaçants, l'objectif ici est de marquer le plus de but dans le camp adverse dans un temps imparti, c'est à dire 90 minutes (2x45 minutes), il se peut qu'il y est des prolongation si le match finit sur une égalité.</p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://i.gifer.com/AYCA.gif" alt="Basketball">
+                        <div class="card-description">
+                            <h2 class="card-title">Basketball</h2>
+                            <p>Le basketball est un sport collectif opposant deux équipes de cinq joueurs sur un terrain rectangulaire. Contrairement au Football, le Basketball se joue avec les mains, le but ici est de marquer le plus de panier possible dans un temps imparti, les joueurs possèdent 40 minutes (4x10 minutes) ayant plusieurs quart temps. Il se peut qu'il y est aussi ds prolongations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/tenis.gif" alt="Tennis">
+                        <div class="card-description">
+                            <h2 class="card-title">Tennis</h2>
+                            <p>Le but du tennis est de frapper la balle pour la faire atterrir dans le terrain de l'adversaire, afin qu'il ne puisse pas la renvoyer. Un match est composé de sets et de jeux. Pour gagner un jeu, il faut marquer quatre points en premier. Les joueurs alternent les services et doivent garder la balle à l'intérieur des limites du terrain. Le gagnant est celui qui remporte le plus de sets. Le tennis peut se jouer en à 2 (simple) ou à 4 (double).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/boxe.gif" alt="Boxe">
+                        <div class="card-description">
+                            <h2 class="card-title">Boxe</h2>
+                            <p>Quel est le but de la boxe, explique moi ça en simple et en 5 ligne
+                              Le but de la boxe est de frapper l'adversaire avec des coups de poing tout en évitant de se faire frapper. Les boxeurs marquent des points en atteignant leur adversaire et en contrôlant le ring. Un combat se déroule en plusieurs rounds. Le gagnant est celui qui marque le plus de points ou met son adversaire KO. La sécurité des boxeurs est primordiale, avec des règles strictes pour éviter les blessures graves. Cependant il existe une grande variété de boxes différentes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>  
         </div>
-    <div class="topnav">
-        <a class="active" href="accueil.html">Accueil</a>
-        <a href="sports.html">Sports</a>
-        <a href="Contact.html">Contact</a>
-        <button class="openbtn"  class="split" onclick="openNav()">☰</button>
-    </div>
-    <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="a_propos.html">A-propos</a>
-        <a href="#">Services</a>
-        <a href="Contact.html">Contact</a>
-    </div>
-    <br>
-     <div class="row row-cols-1 row-cols-md-2 g-4">
-      <div class="col">
-        <div class="card">
-          <h2 class="card-title">Football</h2>
-          <img src="images/football.gif" width="25%" height="25%">
-          <div class="card-body">
-          </div> 
-        </div>
-      </div>
-      <br>
-      <div class="col">
-        <div class="card">
-          <h2 class="card-title">Basketball</h2>
-          <img src="https://i.gifer.com/AYCA.gif" width="25%" height="25%">
-          <div class="card-body">
-          </div>
-        </div>
-      </div>
-      <br>
-      <div class="col">
-        <div class="card">
-          <h2 class="card-title">Tennis</h2>
-          <img src="images/tenis.gif"  width="25%" height="25%">
-          <div class="card-body">
-        </div>
-      </div>
-      <br>
-      <div class="col">
-        <div class="card">
-            <h2 class="card-title">Boxe</h2>
-          <img src="images/boxe.gif" width="25%" height="25%">
-          <div class="card-body">
-            <h2 class="card-title"></h2>
-          </div>
-        </div>
-      </div>
-      </div>  
-      </div>
-      <script>
-      function openNav() {
-        document.getElementById("mySidebar").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
-      }
-      
-      function closeNav() {
-        document.getElementById("mySidebar").style.width = "0";
-        document.getElementById("main").style.marginLeft= "0";
-      }
-      </script> 
+        <script>
+            function openNav() {
+                document.getElementById("mySidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+            
+            function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";
+            }
+        </script> 
     </body>
 </html>
